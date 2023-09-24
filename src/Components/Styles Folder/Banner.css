@@ -1,0 +1,40 @@
+/* Slideshow container */
+.slideshow-container {
+  position: relative;
+  overflow: hidden;
+  max-width: 100%; /* Make the container responsive */
+  height: 100vh; /* Adjust the height as needed or remove it */
+}
+
+/* Individual slides */
+.slide {
+  position: absolute;
+  top: 0;
+  right: 100%; /* Start position from the right side */
+  opacity: 0;
+  transition: right 0.5s ease-in-out, opacity 0.5s ease-in-out;
+  width: 100%; /* Make the images responsive */
+  height: auto; /* Allow images to adjust their height */
+}
+
+/* Active slide */
+.slide.active {
+  right: 0; /* Slide in from the right side */
+  opacity: 1;
+}
+
+/* Add a media query for smaller screens */
+@media (max-width: 768px) {
+  /* Adjust the styles for smaller screens */
+  .slideshow-container {
+
+    
+    height: 200px; /* Adjust the height as needed for smaller screens */
+  }
+
+  .slide {
+    margin-top: 20%;
+    width: 100%; /* Make the images take up the full width on smaller screens */
+    height: auto;
+  }
+}
