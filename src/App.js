@@ -1,15 +1,10 @@
 import React from 'react'
 
-import { BrowserRouter, Route, Routes } from "react-router-dom"
-import MainPage from './MainPage'
+
+
 import "./App.css"
-import Website from './Components/Website'
-import Navbars from './Components/Navbars'
-import AvatarMenu from './Components/AvatarMenu'
-import Diya from './Components/Diya'
-import HomeDecore from './Components/HomeDecore'
-import Row from './Components/Row'
-import { request } from './Components/api'
+import Website from './Components/Components/Website'
+
 
 
 function App() {
@@ -17,24 +12,7 @@ function App() {
     <>
       <div>
 
-        <BrowserRouter>
-          <Navbars />
-          <HomeDecore />
-
-        </BrowserRouter>
-
-
-
-
-
-
-
-        {/* <Website/> */}
-
-        {/* <BrowserRouter> */}
-
-        {/* <MainPage  /> */}
-        {/* </BrowserRouter> */}
+        <Website />
 
 
       </div>
